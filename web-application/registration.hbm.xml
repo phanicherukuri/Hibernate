@@ -1,0 +1,14 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="beans.RegistrationDetails" table="registration_details_1" schema="hibernate">
+	<id name="rid" column="rid">
+		<generator class="increment"></generator>
+	</id>
+	<property name="rname" column="rname"></property>
+	<property name="remail" column="remail"></property>
+	<property name="rmarks" ></property>
+</class>
+</hibernate-mapping>
