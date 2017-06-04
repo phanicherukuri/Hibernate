@@ -1,0 +1,23 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="beans.Employee" table="is_a_table_per_concreteclass" schema="hibernate">
+		<id name="id"/>
+		<property name="name" />
+		<property name="email" />
+		<property name="salary" />
+		
+		<union-subclass name="beans.Manager" table="mngr_class" schema="hibernate">
+			<property name="teamsLead"></property>
+		</union-subclass>
+		<union-subclass name="beans.SoftwareEmployee" table="sw_emp_class" schema="hibernate">
+			<property name="tool"></property>
+		</union-subclass>
+		<union-subclass name="beans.HardwareEmployee" table="hw_emp_class" schema="hibernate">
+			<property name="workingHours"></property>
+		</union-subclass>
+		
+	</class>
+</hibernate-mapping>
