@@ -1,0 +1,11 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+	<class name="beans.Books" table="books" schema="hibernate">
+		<id name="bookid" />
+		<property name="bookname" />
+		<property name="authorid" update="false" insert="false" />
+	</class>
+</hibernate-mapping>
