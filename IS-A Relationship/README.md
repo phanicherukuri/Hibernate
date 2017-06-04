@@ -1,1 +1,1 @@
-This folder shows the Inheritance concepts implementation
+This folder shows the implementation of Inheritance concepts using Hibernate 
