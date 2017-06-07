@@ -1,3 +1,2 @@
 # Hibernate
-Sample Codes using Hibernate
-My Programming using Hibernate (Using hbm.xml)
+Sample Codes demonstrating different Hibernate operations like Inheritence, HAS-A relationships, Caching mechanisms, CRUD Operations etc.
